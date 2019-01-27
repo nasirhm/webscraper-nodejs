@@ -1,12 +1,12 @@
 const rp = require('request-promise');
 const cheer = require('cheerio');
-const url = 'https://en.wikipedia.org/wiki/List_of_Presidents_of_Pakistan';
+const url = 'https://www.indeed.com/q-Blockchain-jobs.html';
 
 
 rp(url)
     .then(function(data){
-        console.log(cheer('tr > th > a',data.length));
-        console.log(cheer('tr > th > a',data))
+        console.log(cheer('div > h2',data.length));
+        console.log(cheer('div > h2',data))
     })
     .catch(function(err){
         console.log(err);
