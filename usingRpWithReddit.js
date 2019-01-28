@@ -11,4 +11,3 @@ rp(url)
   .catch(function(err){
     //handle error
   });
-}
