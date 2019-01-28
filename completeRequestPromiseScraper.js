@@ -15,7 +15,7 @@ rp(url)
         }
         return Promise.all(
             urls.map(function(url){
-                return parser(`https://en.wikipedia.org${url}`);
+                return parser('https://en.wikipedia.org' + url);
             })
         );
     }
