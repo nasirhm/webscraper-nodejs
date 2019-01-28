@@ -10,4 +10,5 @@ rp(url)
   })
   .catch(function(err){
     //handle error
+    console.log(err);
   });
