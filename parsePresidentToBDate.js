@@ -6,7 +6,7 @@ return rp(url)
     .then(function(data){
         return {
         name : cheer('.firstheading',data).text(),
-        Birthday : cheer('.bday',data).text()
+        Birthday : cheer('.bday',data).text(),
     };
     })
     .catch(function(err){

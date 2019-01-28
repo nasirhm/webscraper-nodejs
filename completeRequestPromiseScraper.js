@@ -27,4 +27,4 @@ rp(url)
     {
         //error handling
         console.log(err)
-    })
+    });
